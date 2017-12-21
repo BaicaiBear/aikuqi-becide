@@ -4,9 +4,9 @@
    Cannot use at other ways
  */
 echo ("<form action="welcome.php" method="post">
-IP: <input type="text" name="name"><br>
-User: <input type="text" name="email"><br>
-Passwd:  <input
+IP: <input type="text" name="ip"><br>
+User: <input type="text" name="user"><br>
+Passwd:  <input type="passwd" name="passwd"><br>
 <input type="submit">
 </form>")
 $con = mysql_connect("$sqlip","$sqlusr","$sqlpasswd");
