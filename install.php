@@ -3,10 +3,17 @@
    Make for Aikuqi
    Cannot use at other ways
  */
-$con = mysql_connect($_POST["ip"],$_POST["user"],$_POST["passwd"]);
-if (!$con)
-  {
-  die('Cannot connect: ' . mysql_error());
+ if($POST_['sumbit']==1){
+  $con = mysql_connect($POST_['ip'],$POST_['user'],$POST_['passwd'];
+  if(!$con){
+   echo 'cannot connect'.mysql_error.'.';
+   echo '<a herf="install.html">Back again</a>';
+   die();
   }
-else echo("<p>yes</p>");
- 
+  else{
+   echo 'OK!';
+   echo '<a herf="install2.html">Go on</a>';
+   die();
+  }
+ }
+?>
