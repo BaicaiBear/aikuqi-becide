@@ -8,12 +8,14 @@
   <header>
    <h1>安装后台</h1>
    <hr />
+  </header>
    <h2>数据库连接信息</h2>
    <form action="install.php" method="post">
-    IP/地址: <input type="text" name="ip"><br>
-    ID/用户名: <input type="text" name="user"><br>
-	Passwd/密码: <input type="password" name="passwd"><br>
-    <input type="submit">
+    IP/地址: <input type="text" name="ip" value="localhost:3306" /><br />
+    ID/用户名: <input type="text" name="user" value="root" /><br />
+    Passwd/密码: <input type="password" name="passwd" /><br />
+    <input type="submit" name="sumbit" value="确定" /><br />
    </form>
+   <hr />
  </body>
 </html>
